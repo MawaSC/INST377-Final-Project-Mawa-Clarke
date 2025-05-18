@@ -42,6 +42,10 @@ app.get('/users', async (req, res) => {
     res.send(data);
 });
 
+app.get('/', (req, res) => {
+  res.send('Server is running ✅');
+});
+
 
 app.post('/user', async(req, res) => {
     console.log('Adding User');
