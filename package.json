@@ -1,0 +1,28 @@
+{
+  "name": "inst377-final-project-mawa-clarke",
+  "version": "1.0.0",
+  "description": "Linica - Your Ultimate Language Learning Resource",
+  "homepage": "https://github.com/MawaSC/INST377-Final-Project-Mawa-Clarke#readme",
+  "bugs": {
+    "url": "https://github.com/MawaSC/INST377-Final-Project-Mawa-Clarke/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MawaSC/INST377-Final-Project-Mawa-Clarke.git"
+  },
+  "license": "ISC",
+  "author": "Mawa Clarke",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon contact.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10",
+    "usa-state-validator": "^1.0.6"
+  }
+}
