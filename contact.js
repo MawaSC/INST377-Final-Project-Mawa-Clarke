@@ -89,7 +89,7 @@ app.post('/user', async(req, res) => {
     console.log(req.body);
 
     res.status(200).json({ success: true});
-    res.send();
+    //res.send();
 });
 
 app.listen(port, () => {
