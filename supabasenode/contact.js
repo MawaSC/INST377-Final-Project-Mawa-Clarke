@@ -15,6 +15,10 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 
 const supabase = supabaseClient.createClient(supabaseURL, supabaseKey);
 
+app.get('/', (req, res) => {
+    res.send('Server is running');
+});
+
 /*app.get('/users', async (req, res) => {
     console.log('Attempting to GET all users');
 
