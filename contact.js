@@ -8,16 +8,42 @@ const port = 3000;
 app.use(bodyParser.json());
 
 const path = require('path');
-app.use(express.static(path.join(__dirname, '..', '/public')));
-app.use(express.static(__dirname, + '/public'));
+/*app.use(express.static(path.join(__dirname, '..', '/public')));
+app.use(express.static(__dirname, + '/public'));*/
+app.use(express.static(path.join(__dirname, 'public')));
+// Home Page (optional default)
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'Home.html'));
+});
+
+// Contact Page
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+});
+
+// Dictionary Page
+app.get('/dictionary', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'DictionaryPage.html'));
+});
+
+// Translate Page
+app.get('/translate', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'TranslatePage.html'));
+});
+
+// Wiki Page
+app.get('/wiki', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'WikiPage.html'));
+});
+
 const supabaseURL = 'https://igeclhtwkyjjyficzjxi.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlnZWNsaHR3a3lqanlmaWN6anhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc0NjM5OTYsImV4cCI6MjA2MzAzOTk5Nn0.MF4xIr0nymDqe5sXHQXG_xvj4OLUx5Cpw55lK-BSvTU';
 
 const supabase = supabaseClient.createClient(supabaseURL, supabaseKey);
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'public', 'contact.html'));
-});
+});*/
 
 /*app.get('/users', async (req, res) => {
     console.log('Attempting to GET all users');
