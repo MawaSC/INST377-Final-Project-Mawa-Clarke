@@ -7,6 +7,7 @@ Linica - Your Ultimate Language Learning Resource
     - View encyclopedic content about a word in the word's native language.
     - Be able to view definition of the words in the selected language (feature coming soon!)
 This platform is great for both beginners who want quick translations along with intermediate and advanced learners who would like to go deeper with their vocabulary knowledge.
+
 -[Go to User Manual](#user-manual)
 -[Go to Developer Manual](#developer-manual)
 
@@ -28,10 +29,10 @@ Our web applications is available for the following browsers:
 ### Installation
 1. Clone the project repository into a directory with this command: 
     ```
-    git clone git@github.com:INST377-UMD
+    git clone git@github.com:MawaSC/INST377-Final-Project-Mawa-Clarke
 2. Navigate into the project directory and open it using:
     ```
-    cd INST
+    cd MawaSC/INST377-Final-Project-Mawa-Clarke
 3. Install the required dependencies, including:
     ```
     npm install
@@ -55,14 +56,18 @@ This will start the server. To confirm, you should see <code>App is Alive 3000</
 Your app will be available using:
     ```
     http://localhost:3000
+
 Or using the Vercel domain:
     ```
-    git c
+    https://inst-377-final-project-mawa-clarke.vercel.app/
 
 ### API Documentation
-- The main API used is titled. One 
-- The second is an external database using Supabase, with a POST endpoint. The database is titled "contact", and it stores users inputting their information to request for tutoring services under the <code>Contact</code> Page.
+- The main API used is titled TranslatePlus https://translateplus.io/. This used POST endpoints in order to send descriptions to the endpoint, and allow a return of the requested value, which in this case was to translate the written text and detect the language.
+- The second API used was Wiki https://en.wiktionary.org/w/api.php. This fetched data from the Wiki database depending on the word entered into the system, and returned the data from an available Wiki page.
+- The third is an external database using Supabase, with a POST endpoint. The database is titled "contact", and it stores users inputting their information to request for tutoring services under the <code>Contact</code> Page.
 
 ### Notes & Comments
 - As mentioned before, this application will continue to be developed, as a Definition page will be added soon.
+
+Contributor and Author: Mawa Clarke
     

@@ -36,6 +36,11 @@ app.get('/wiki', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'WikiPage.html'));
 });
 
+// About Page
+app.get('/about', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'AboutPage.html'));
+});
+
 const supabaseURL = 'https://igeclhtwkyjjyficzjxi.supabase.co';
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlnZWNsaHR3a3lqanlmaWN6anhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc0NjM5OTYsImV4cCI6MjA2MzAzOTk5Nn0.MF4xIr0nymDqe5sXHQXG_xvj4OLUx5Cpw55lK-BSvTU';
 
