@@ -1,0 +1,173 @@
+/* This page includes general CSS such as the Navi*/
+
+body {
+    /*background-color: #490000e0;*/
+    background-color: #f8edede0;
+    /*color: white;*/
+    color: rgb(21, 21, 21);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /*font-family: 'Nunito', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+    /*background: #a23ab4;
+    background: linear-gradient(90deg, rgba(162, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 124, 69, 1) 87%);*/
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #vanta-bg {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+    /*color: white;*/
+    color: rgb(21, 21, 21);
+    font-weight: bold;
+    z-index: 2;
+    animation: slideDownTitle 1s ease forwards;
+  }
+
+  @keyframes slideDownTitle {
+    from {
+      transform: translate(-50%, -80%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+  }
+  
+  .finisher-header {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  #bar {
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    padding: 5px;
+    clear: both;
+  }
+  
+  #main-nav {
+    /*background-color: rgba(34, 1, 1, 0.853);*/
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    padding: 0;
+    text-align: center;
+  }
+
+  #main-nav li {
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #main-nav li:hover {
+    background-color: #762525;
+    color: white;
+  }
+
+  #main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+  
+  #main-nav ul ul {
+    display: none;
+    position: absolute;
+  }
+  
+  #main-nav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .content-area {
+    /*width: 73%;*/
+    /*float: left;*/
+    margin: 0;
+  }
+
+  a.no-underline {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .flex-parent {
+    display: flex;
+    }
+
+    .jc-center {
+    justify-content: center;
+    }
+
+  .flex-parent a {
+      margin: 20px;
+  }
+
+  .slide-down {
+    animation: slideDown 1s ease forwards;
+    opacity: 0;
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+    #quotes-box {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid #cccccc00;
+        margin: 20px auto;
+        width: 80%;
+        font-style: italic;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #audio-box {
+        background-color: #2ea63e;
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid #ccc;
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }

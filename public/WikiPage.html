@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Linica</title>
+    <link rel="stylesheet" href="WikiPage.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="vanta-bg">
+        <h1 class="header-title">Linica</h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="Home.html" class="no-underline">Home</a></li>
+            <li><a href="TranslatePage.html" class="no-underline">Translate</a></li>
+            <li><a href="DictionaryPage.html" class="no-underline">Dictionary</a></li>
+            <li><a href="WikiPage.html"class="no-underline">Wiki</a></li>
+            <li><a href="contact.html"class="no-underline">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <title>Multilingual Dictionary Search</title>
+    <!-- Main text Area -->
+    <div class="main-container slide-down">
+        <h1>Wiktionary Search</h1>
+            <div class="searchBox">
+                <input type="text" id="searchInput" placeholder="Enter a word">
+                    <select id="languageSelect">
+                        <option value="English">English</option>
+                        <option value="French">French</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="German">German</option>
+                        <option value="Japanese">Japanese</option>
+                        <option value="Korean">Korean</option>
+                        <option value="Chinese">Chinese (Simplified)</option>
+                        <option value="Vietnamese">Vietnamese</option>
+                        <option value="Tagalog">Tagalog (Filipino)</option>
+                    </select>
+                    <button id="searchButton">Search</button>
+                </div>
+                <div id="output" class="result"></div>
+            </div>
+
+    <!-- Footer -->
+    <footer id="bar">
+        <p>Copyright 2025</p>
+    </footer>
+
+    <!-- Code for Animated Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+    <script>
+    VANTA.FOG({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x9a3c55,
+    midtoneColor: 0xc03525,
+    lowlightColor: 0xcc1620,
+    baseColor: 0xef9b9b,
+    blurFactor: 0.6,
+    zoom: 1,
+    speed: 1
+    });
+    </script>
+
+    <script src="WikiPage.js"></script>
+</body>
+
+</html>

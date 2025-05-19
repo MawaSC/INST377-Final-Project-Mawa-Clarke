@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <title>Linica</title>
+    <link rel="stylesheet" href="TranslatePage.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="vanta-bg">
+        <h1 class="header-title">Linica</h1>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav id="main-nav">
+        <ul>
+            <li><a href="Home.html" class="no-underline">Home</a></li>
+            <li><a href="TranslatePage.html" class="no-underline">Translate</a></li>
+            <li><a href="DictionaryPage.html" class="no-underline">Dictionary</a></li>
+            <li><a href="WikiPage.html"class="no-underline">Wiki</a></li>
+            <li><a href="contact.html"class="no-underline">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main text Area -->
+    <div class="translate-container slide-down">
+        <div class="language-selectors">
+            <div class="selector">
+                <label for="sourceLang">Original Text:</label>
+                <!--<textarea id="inputText" placeholder="Type something..."></textarea>-->
+                <select id="sourceLang">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                    <option value="de">German</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="zh-CN">Chinese (Simplified)</option>
+                    <option value="vi">Vietnamese</option>
+                    <option value="tl">Tagalog (Filipino)</option>
+                </select>
+            </div>
+            <div class="selector">
+                <label for="targetLang">Translated Text:</label>
+                <!--<textarea id="outputText" readonly></textarea>-->
+                <select id="targetLang">
+                    <option value="tl">Tagalog (Filipino)</option>
+                    <option value="vi">Vietnamese</option>
+                    <option value="zh-CN">Chinese (Simplified)</option>
+                    <option value="ko">Korean</option>
+                    <option value="ja">Japanese</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+
+    <div class="text-boxes">
+        <textarea id="inputText" placeholder="Type something..."></textarea>
+        <textarea id="outputText" readonly></textarea>
+    </div>
+
+    <button id="trans">Translate</button>
+</div>
+<br>
+
+    <div class="detect-container">
+        <div class="text-box">
+            <textarea id="inputTextDetect" placeholder="Type something..."></textarea>
+        </div>
+
+        <div id="langOutput" class="langOutput"></div>
+        <br>
+        <br>
+
+        <button id="detect">Detect Language</button>
+    </div>
+
+    <section id="flashcardSection">
+        <h2>Test out your translated words with our flashcard feature!</h2>
+        <div class="swiper flashcard-swiper">
+            <div class="swiper-wrapper" id="flashcardWrapper">
+                <!-- Flashcards -->
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="flashcard-inputs">
+            <input type="text" id="flashcardFront" placeholder="Enter word or phrase (front)">
+            <input type="text" id="flashcardBack" placeholder="Enter translation or meaning (back)">
+            <button id="addFlashcard">Add Flashcard</button>
+        </div>
+    </section>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--<div class ="controlOptions">
+        <select id="sourceLang"></select>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="ja">Japanese</option>
+            <option value="ko">Korean</option>
+            <option value="zh">Chinese (Simplified)</option>
+        </select>
+
+        <select id="TargetLang"></select>
+            <option value="zh">Chinese (Simplified)</option>
+            <option value="ko">Korean</option>
+            <option value="ja">Japanese</option>
+            <option value="de">German</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="en">English</option>
+        </select>
+
+        <button id="trans">Translate</button>-->
+    </div>
+
+    <br>
+
+    <!-- Footer -->
+    <footer id="bar">
+        <p>Copyright 2025</p>
+    </footer>
+
+    <!-- Code for Animated Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+    <script>
+    VANTA.FOG({
+    el: "#vanta-bg",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    highlightColor: 0x9a3c55,
+    midtoneColor: 0xc03525,
+    lowlightColor: 0xcc1620,
+    baseColor: 0xef9b9b,
+    blurFactor: 0.6,
+    zoom: 1,
+    speed: 1
+    });
+    </script>
+
+    <!-- Load JS File -->
+     <script src="TranslatePage.js" defer></script>
+</body>
+
+</html>
