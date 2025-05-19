@@ -69,6 +69,10 @@ body {
     padding: 5px;
     clear: both;
   }
+
+  .content-area {
+    padding-left: 60px;
+  }
   
   #main-nav {
     /*background-color: rgba(34, 1, 1, 0.853);*/
@@ -145,28 +149,6 @@ body {
       opacity: 1;
     }
   }
-
-    #quotes-box {
-        background-color: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        border: 2px solid #cccccc00;
-        margin: 20px auto;
-        width: 80%;
-        font-style: italic;
-        margin-top: 20px;
-        font-size: 1.2rem;
-        text-align: center;
-    }
-
-    #audio-box {
-        background-color: #2ea63e;
-        padding: 15px;
-        border-radius: 10px;
-        border: 2px solid #ccc;
-        margin: 20px auto;
-        width: 80%;
-    }
 
     h1, h2, h3 {
         text-align: center;
