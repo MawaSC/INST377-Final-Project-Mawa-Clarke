@@ -7,8 +7,8 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     const language = document.getElementById('language').value.trim();
     const message = document.getElementById('message').value.trim();
 
-    //const response = await fetch('/user', {
-    const response = await fetch('http://localhost:3000/user', {
+    const response = await fetch('/user', {
+    //const response = await fetch('http://localhost:3000/user', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
