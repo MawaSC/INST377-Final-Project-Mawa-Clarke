@@ -16,7 +16,7 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = supabaseClient.createClient(supabaseURL, supabaseKey);
 
 app.get('/', (req, res) => {
-    res.send('Server is running');
+    res.sendFile(path.join(__dirname, '..', 'public', 'contact.html'));
 });
 
 /*app.get('/users', async (req, res) => {
